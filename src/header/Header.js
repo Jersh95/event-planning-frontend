@@ -14,9 +14,6 @@ const Header = (props) => {
         user: state.user
     }));
 
-    console.log('Header User', user);
-    console.log('initialized', initialized)
-
     return (
         <Navbar bg="light" expand="lg">
             <Container>

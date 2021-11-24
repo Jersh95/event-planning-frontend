@@ -49,7 +49,6 @@ export const getUser = () => {
 };
 
 export const readUser = async (uid) => {
-    console.log('readUser', uid);
     const dbRef = ref(db);
     return await get(child(dbRef, `users/${uid}`))
         .then(snapshot => snapshot.exists() ? snapshot.val() : null)

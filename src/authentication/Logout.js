@@ -5,7 +5,6 @@ import {logoutUser} from '../firebase/UserStore';
 export const Logout = (props) => {
     let navigate = useNavigate();
     useEffect(() => {
-        console.log('in useEffect')
         logoutUser.run();
         navigate('/');
     }, []);
